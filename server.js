@@ -13,9 +13,9 @@ if (process.env.NODE_ENV === "production") {
 
 app.use("/", Routes);
 
-app.get("/", (req, res) => {
-  res.json("server is running");
-});
+// app.get("/", (req, res) => {
+//   res.json("server is running");
+// });
 
 const PORT = process.env.PORT || 8000;
 
