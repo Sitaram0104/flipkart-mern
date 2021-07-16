@@ -7,7 +7,8 @@ import {
   REMOVE_FROM_CART_FAIL,
 } from "../features/cartSlice.js";
 
-const url = "http://localhost:8000";
+const url = "https://flipkart-mernstack-ecommerce.herokuapp.com/";
+// const url = "http://localhost:8000";
 
 export const addToCart = (id) => async (dispatch) => {
   try {

@@ -7,7 +7,8 @@ import {
   GET_PRODUCT_DETAIL_FAIL,
 } from "../features/productSlice.js";
 
-const url = "http://localhost:8000";
+const url = "https://flipkart-mernstack-ecommerce.herokuapp.com/";
+// const url = "http://localhost:8000";
 
 export const getProducts = () => async (dispatch) => {
   try {

@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const url = "http://localhost:8000";
+const url = "https://flipkart-mernstack-ecommerce.herokuapp.com/";
+// const url = "http://localhost:8000";
 
 export const authenticateSignup = async (user) => {
   try {
