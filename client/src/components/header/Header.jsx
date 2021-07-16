@@ -13,6 +13,7 @@ import HeaderButtons from "./HeaderButtons";
 import SearchBar from "./SearchBar";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { logoURL, subURL } from "../../constants/data";
 
 const useStyle = makeStyles((theme) => ({
   header: { background: "#2874f0", height: 55 },
@@ -54,11 +55,6 @@ function Header() {
   const [open, setOpen] = useState(false);
   const classes = useStyle();
 
-  const logoUrl =
-    "https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png";
-  const subUrl =
-    "https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png";
-
   const openDrawer = () => {
     setOpen(true);
   };
@@ -80,7 +76,7 @@ function Header() {
           <HeaderButtons closeDrawer={closeDrawer} />
         </Drawer>
         <Link to="/" className={classes.component}>
-          <img src={logoUrl} alt="logo" className={classes.logo} />
+          <img src={logoURL} alt="logo" className={classes.logo} />
           <Box className={classes.container}>
             <Typography className={classes.subHeading}>
               Explore{" "}
@@ -88,7 +84,7 @@ function Header() {
                 Plus
               </Box>
             </Typography>
-            <img src={subUrl} alt="" className={classes.sub} />
+            <img src={subURL} alt="" className={classes.sub} />
           </Box>
         </Link>
         <SearchBar />
